@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_report"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.harsh.mywallet.ReportActivity"
+    android:background="@color/cardview_light_background">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        app:srcCompat="@drawable/reports"
+        android:id="@+id/reportImage"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/background_light"
+        android:elevation="0dp"
+        android:layout_height="250dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/reportImage"
+        android:layout_marginTop="30dp"
+        android:background="@color/cardview_light_background">
+
+        <TextView
+            android:text="Pie Chart : Category Wise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chart1"
+            android:textSize="30sp"
+            android:padding="7dp" />
+
+        <TextView
+            android:text="Bar Graph : Daily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chart2"
+            android:textSize="30sp"
+            android:padding="7dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:text="Bar Graph : Monthly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chart3"
+            android:textSize="30sp"
+            android:padding="7dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+</RelativeLayout>
