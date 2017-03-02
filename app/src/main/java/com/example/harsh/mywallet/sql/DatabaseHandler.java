@@ -59,6 +59,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             db.execSQL( "CREATE TABLE expenses ( day INTEGER, month INTEGER, year INTEGER, category TEXT, details TEXT, amount REAL )");
             db.execSQL(" create table lendings ( id INTEGER PRIMARY KEY AUTOINCREMENT, day INTEGER, month INTEGER, year INTEGER, lentto TEXT, amount REAL, paid REAL )");
 
+            Log.i("msg", "created");
 
         }
 
@@ -117,7 +118,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             Cursor cursor = db.rawQuery("select * from lendings ", null);
 
             List<Lending> lendList = new ArrayList<>();
-            Lending l;
+            Lending l ;
             int i = 0;
             if (cursor != null) {
                 cursor.moveToFirst();
